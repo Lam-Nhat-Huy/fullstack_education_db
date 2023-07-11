@@ -1,0 +1,13 @@
+.navbar-vertical.navbar-expand-xs .navbar-nav .nav-link:hover {
+  color: rgb(255, 0, 0);
+
+  transition: 0.2s;
+}
+.fa-pencil-alt:before {
+  font-size: 12px;
+  content: "\f303";
+}
+.fa-trash-alt:before {
+  font-size: 12px;
+  content: "\f2ed";
+}
