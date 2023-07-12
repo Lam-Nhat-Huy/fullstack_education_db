@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-header">
                 <h4>
-                    Thêm Sản Phẩm
+                    Thêm Khóa Học
                     <a href="course.php" class="btn btn-danger float-end">Trở Về</a>
                 </h4>
             </div>
@@ -28,7 +28,7 @@
                         <input type="text" class="form-control" name="description">
                     </div>
                     <div class="mb-3">
-                        <button type="submit" name="addProduct" class="btn btn-primary">Thêm</button>
+                        <button type="submit" name="addCourse" class="btn btn-primary">Thêm</button>
                     </div>
                 </form>
             </div>
