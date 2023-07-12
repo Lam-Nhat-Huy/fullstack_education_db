@@ -10,27 +10,40 @@
                 </h4>
             </div>
             <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="product_id" value="">
-                    <div class="mb-3">
-                        <label for="">Name: </label>
-                        <input type="text" class="form-control" name="name" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="">Hình Ảnh: </label>
-                        <input type="text" class="form-control" name="image" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="">Price: </label>
-                        <input type="number" class="form-control" name="price" value="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="">Description: </label>
-                        <input type="text" class="form-control" name="description" value="">
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" name="updateProduct" class="btn btn-primary">Lưu</button>
-                    </div>
+                <?php
+                $course_id = mysqli_real_escape_string($conn, $_GET['id']);
+                $query = "SELECT * FROM courses WHERE id = $course_id";
+                $sql = mysqli_query($conn, $query);
+
+                while ($row = mysqli_fetch_array($sql)) {
+                ?>
+                    <form action="code.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="course_id" value="<?= $row['id'] ?>">
+                        <div class="mb-3">
+                            <label for="">Name: </label>
+                            <input type="text" class="form-control" name="name" value="<?= $row['name'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="">Hình Ảnh: </label>
+                            <input type="text" class="form-control" name="image" value="<?= $row['image'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="">Giá: </label>
+                            <input type="text" class="form-control" name="price" value="<?= $row['price'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="">Mô tả: </label>
+                            <input type="text" class="form-control" name="description" value="<?= $row['description'] ?>">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" name="updateCourse" class="btn btn-primary">Lưu</button>
+                        </div>
+                    </form>
+
+                <?php
+                }
+
+                ?>
                 </form>
             </div>
         </div>
