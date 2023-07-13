@@ -39,8 +39,8 @@
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder ">Quản Lý Dịch Vụ</h6>
             </div>
             <li class="nav-item">
-                <a class="nav-link  " href="">
-                    <span class="nav-link-text ms-1">Đăng Nhập</span>
+                <a class="nav-link" href="../../product/index.php">
+                    <span class="nav-link-text ms-1">Website Của Tôi</span>
                 </a>
             </li>
 

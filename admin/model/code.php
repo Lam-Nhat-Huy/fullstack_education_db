@@ -32,3 +32,14 @@ if (isset($_POST['updateCourse'])) {
         header('Location: course.php');
     }
 }
+
+// Xóa khóa học
+
+if (isset($_POST['deleteCourse'])) {
+    $course_id = mysqli_real_escape_string($conn, $_POST['deleteCourse']);
+    $query = "DELETE FROM courses WHERE id = $course_id";
+    $sql = mysqli_query($conn, $query);
+    if ($sql) {
+        header('Location: course.php');
+    }
+}

@@ -7,7 +7,6 @@
                 <h4>
                     Danh Sách Sản Phẩm
                     <a href="./courseCreate.php" class="btn btn-primary float-end">Thêm Sản Phẩm</a>
-                    <button type="submit" name="saveUser" class="btn btn-success float-end saveUser">Lưu</button>
                 </h4>
             </div>
 
@@ -42,7 +41,7 @@
                                         <a href="./courseUpdate.php?id=<?= $fetch_course['id'] ?>" class="btn btn-success btn-sm"><i class="fas fa-pencil-alt"></i>
                                         </a>
                                         <form action="code.php" method="post">
-                                            <button type="submit" class="btn btn-danger btn-sm" name="deleteProduct" value="<?= $fetch_course['id'] ?>"><i class="fas fa-trash-alt"></i>
+                                            <button type="submit" class="btn btn-danger btn-sm" name="deleteCourse" value="<?= $fetch_course['id'] ?>"><i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
                                     </td>
