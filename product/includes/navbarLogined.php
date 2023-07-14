@@ -11,13 +11,13 @@
                 <a href="" class="nav_list-link">Trang Chủ</a>
             </li>
             <li class="nav_list-item">
-                <a href="./assets/src/package.main.html" class="nav_list-link">Khóa Học</a>
+                <a href="#" class="nav_list-link">Khóa Học</a>
             </li>
             <li class="nav_list-item">
-                <a href="./assets/src/help.main.html" class="nav_list-link">Hỗ Trợ</a>
+                <a href="#" class="nav_list-link">Hỗ Trợ</a>
             </li>
             <li class="nav_list-item">
-                <a href="./assets/src/contact.main.html" class="nav_list-link">Liên Hệ</a>
+                <a href="#" class="nav_list-link">Liên Hệ</a>
             </li>
         </ul>
     </nav>

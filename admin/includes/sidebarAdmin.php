@@ -20,11 +20,11 @@
             </li>
 
             <div class="nav-item mt-3">
-                <h2 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder ">Quản Lý Trang Web</h2>
+                <h2 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder ">Quản Lý Tài Khoản</h2>
             </div>
             <li class="nav-item">
                 <a class="nav-link  " href="../model/user.php">
-                    <span class="nav-link-text ms-1">Danh Sách Người Dùng</span>
+                    <span class="nav-link-text ms-1">Tài Khoản Của Tôi</span>
                 </a>
             </li>
             <div class="nav-item mt-3">

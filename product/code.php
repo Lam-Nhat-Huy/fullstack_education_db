@@ -7,13 +7,19 @@ include('../config/database.php');
 if (isset($_POST['registerUser'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $password = mysqli_real_escape_string($conn, md5($_POST['password']));
     $cpassword = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
     $select_user = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$password'") or die('query failed');
-    if (mysqli_num_rows($select_user) > 0) {
-        $message[] = "User already exists";
+
+    if (!empty($name) && !empty($email) && !empty($password) && !empty($cpassword)) {
+        if (mysqli_num_rows($select_user) > 0) {
+            $message[] = "User already exists";
+        } else {
+            mysqli_query($conn, "INSERT INTO `users`(name, email, phone, password) VALUES('$name', '$email','$phone', '$password')") or die('query failed');
+            header('Location: index.php');
+        }
     } else {
-        mysqli_query($conn, "INSERT INTO `users`(name, email, password) VALUES('$name', '$email', '$password')") or die('query failed');
         header('Location: index.php');
     }
 }
@@ -28,5 +34,7 @@ if (isset($_POST['loginUser'])) {
         $fetch_user = mysqli_fetch_assoc($select_user);
         $_SESSION['user_id'] = $fetch_user['id'];
         header('Location: indexLogined.php');
+    } else {
+        header('Location: index.php');
     }
 }

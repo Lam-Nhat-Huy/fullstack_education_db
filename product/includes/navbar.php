@@ -11,13 +11,13 @@
                 <a href="" class="nav_list-link">Trang Chủ</a>
             </li>
             <li class="nav_list-item">
-                <a href="./assets/src/package.main.html" class="nav_list-link">Khóa Học</a>
+                <a href="#" class="nav_list-link">Khóa Học</a>
             </li>
             <li class="nav_list-item">
-                <a href="./assets/src/help.main.html" class="nav_list-link">Hỗ Trợ</a>
+                <a href="#" class="nav_list-link">Hỗ Trợ</a>
             </li>
             <li class="nav_list-item">
-                <a href="./assets/src/contact.main.html" class="nav_list-link">Liên Hệ</a>
+                <a href="#" class="nav_list-link">Liên Hệ</a>
             </li>
         </ul>
     </nav>
@@ -36,23 +36,10 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Khóa Học Của Tôi</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="shopping-cart">
-                            <table class="table">
-                                <thead>
-                                    <td>Tên Khóa Học</td>
-                                    <td>Hình Ảnh</td>
-                                    <td>Mô tả</td>
-                                    <td>Lựa Chọn</td>
-                                </thead>
-
-                                <tbody>
-
-                                </tbody>
-
-
-                            </table>
-                        </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <button type="button" class="model-login btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginUser">
+                            Vui Lòng đăng nhập
+                        </button>
                     </div>
                 </div>
             </div>
@@ -82,6 +69,10 @@
                                                 <div class="mb-3">
                                                     <label for="">Email: </label>
                                                     <input type="email" class="form-control" name="email">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="">Số Điện Thoại: </label>
+                                                    <input type="number" class="form-control" name="phone">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="">Mật Khẩu: </label>
