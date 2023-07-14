@@ -8,7 +8,7 @@
         $fetch_user = mysqli_fetch_assoc($select_user);
     };
     ?>
-    <div class="info d-flex">
+    <div class="info d-flex justify-content-center">
         <p style="margin-right: 10px;">Tên người dùng: <strong><?php echo $fetch_user['name'] ?></strong></p>
         <p>Tài khoản: <strong><?php echo $fetch_user['email'] ?></strong></p>
     </div>

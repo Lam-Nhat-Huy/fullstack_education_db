@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 14, 2023 at 04:55 PM
+-- Generation Time: Jul 14, 2023 at 06:59 PM
 -- Server version: 8.0.31
 -- PHP Version: 7.4.33
 
@@ -86,6 +86,15 @@ CREATE TABLE `course_list` (
   `description` varchar(200) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `course_list`
+--
+
+INSERT INTO `course_list` (`id`, `course_id`, `name`, `image`, `price`, `description`) VALUES
+(5, '8', 'HTML CSS từ Zero đến Hero', '3.png', '100,000VNĐ', 'Trong khóa này chúng ta sẽ xây dựng giao diện Website'),
+(6, '9', 'Kiến Thức Nhập Môn IT', '1.png', '100,000VNĐ', 'Để có cái nhìn tổng quan về ngành IT chuyên ngành Web\r\n'),
+(7, '10', 'Làm việc với Terminal & Ubuntu', '7.png', '100,000VNĐ', 'Sở hữu một Terminal hiện đại, mạnh mẽ trong tùy biến');
+
 -- --------------------------------------------------------
 
 --
@@ -107,7 +116,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `create_at`) VALUES
 (8, 'Lâm Nhật Huy', 'lamnhathuy0393418721@gmail.com', '0393379824', '53a9b54c9b63e0634b97685d0ca0315e', '2023-07-14 19:40:21'),
-(9, 'Lâm Nhật Huy', 'huylnpc05258@fpt.edu.vn', '0393418721', '704f51d8f2ff0877319d7b669f20b7a4', '2023-07-14 19:48:47');
+(10, 'Lâm Thị Như Ý', 'lamthinhuy2006@gmail.com', '0327100406', 'ece61508ab37b633263cf85a127ae9e1', '2023-07-15 01:38:37');
 
 --
 -- Indexes for dumped tables
@@ -157,23 +166,13 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `course_list`
 --
 ALTER TABLE `course_list`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `course_list`
---
-ALTER TABLE `course_list`
-  ADD CONSTRAINT `course_list_ibfk_1` FOREIGN KEY (`id`) REFERENCES `courses` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
