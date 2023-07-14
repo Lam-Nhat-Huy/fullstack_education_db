@@ -1,6 +1,6 @@
 <?php
-session_start();
 include('../config/database.php');
+include('../config/functions.php');
 
 
 // Chức năng đăng ký user
@@ -36,5 +36,34 @@ if (isset($_POST['loginUser'])) {
         header('Location: indexLogined.php');
     } else {
         header('Location: index.php');
+    }
+}
+
+
+// Thêm khóa học vào giỏ hàng
+if (isset($_POST['saveCourse'])) {
+    $course_name = $_POST['course_name'];
+    $course_image = $_POST['course_image'];
+    $course_price = $_POST['course_price'];
+    $course_description = $_POST['course_description'];
+    $select_course = mysqli_query($conn, "SELECT * FROM course_list WHERE course_id = '$user_id'");
+    if (mysqli_num_rows($select_course) > 0) {
+        mysqli_query($conn, "INSERT INTO course_list (course_id, name, image, price, description) VALUES ('$user_id', '$course_name', '$course_image', '$course_price', '$course_description')");
+        header('Location: indexLogined.php');
+    } else {
+        mysqli_query($conn, "INSERT INTO course_list (course_id, name, image, price, description) VALUES ('$user_id', '$course_name', '$course_image', '$course_price', '$course_description')");
+        header('Location: indexLogined.php');
+    }
+}
+
+
+// Xóa khóa học khỏi giỏ hàng
+
+if (isset($_POST['deleteCourse'])) {
+    $course_id = mysqli_real_escape_string($conn, $_POST['deleteCourse']);
+    $query = "DELETE FROM course_list WHERE id = $course_id";
+    $sql = mysqli_query($conn, $query);
+    if ($sql) {
+        header('Location: indexLogined.php');
     }
 }

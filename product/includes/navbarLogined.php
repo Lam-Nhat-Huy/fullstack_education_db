@@ -41,12 +41,34 @@
                                 <thead>
                                     <td>Tên Khóa Học</td>
                                     <td>Hình Ảnh</td>
-                                    <td>Mô Tả</td>
-                                    <td>Lựa Chọn</td>
+                                    <td>Giá</td>
+                                    <td></td>
                                 </thead>
 
                                 <tbody>
-
+                                    <?php
+                                    $course_query = mysqli_query($conn, "SELECT * FROM course_list WHERE course_id='$user_id'");
+                                    if (mysqli_num_rows($course_query) > 0) {
+                                        while ($fetch_course = mysqli_fetch_array($course_query)) {
+                                    ?>
+                                            <tr>
+                                                <td><?= $fetch_course['name'] ?></td>
+                                                <td>
+                                                    <img src="./assets/img/<?= $fetch_course['image'] ?>" alt="" width="100">
+                                                </td>
+                                                <td><?= $fetch_course['price'] ?></td>
+                                                <td>
+                                                    <form action="./code.php" method="post">
+                                                        <button type="submit" name="deleteCourse" value="<?= $fetch_course['id'] ?>">
+                                                            <span><i class="fa fa-trash"></i></span>
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                    <?php
+                                        }
+                                    }
+                                    ?>
                                 </tbody>
 
 
