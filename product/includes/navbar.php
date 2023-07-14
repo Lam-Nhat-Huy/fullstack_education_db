@@ -40,10 +40,10 @@
                         <div class="shopping-cart">
                             <table class="table">
                                 <thead>
-                                    <td>Name</td>
-                                    <td>Image</td>
-                                    <td>Description</td>
-                                    <td>Acction</td>
+                                    <td>Tên Khóa Học</td>
+                                    <td>Hình Ảnh</td>
+                                    <td>Mô tả</td>
+                                    <td>Lựa Chọn</td>
                                 </thead>
 
                                 <tbody>

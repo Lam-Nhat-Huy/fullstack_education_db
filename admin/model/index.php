@@ -38,7 +38,7 @@
 
 <div class="row mt-5">
     <?php
-    $sql = mysqli_query($conn, "SELECT * FROM users");
+    $sql = mysqli_query($conn, "SELECT * FROM courses");
     if (mysqli_num_rows($sql) > 0) {
         $countUsers = mysqli_num_rows($sql);
     }
@@ -52,7 +52,7 @@
             <p class="card-text">
             <h5><strong><?php echo $countUsers; ?></strong></h5>
             </p>
-            <a href="./product.php " class="btn btn-primary">Kiểm tra</a>
+            <a href="./course.php " class="btn btn-primary">Kiểm tra</a>
         </div>
     </div>
 </div>
