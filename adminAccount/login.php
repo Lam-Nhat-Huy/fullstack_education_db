@@ -1,5 +1,5 @@
 <?php include('./includes/headerAdminAccount.php'); ?>
-<div class="form-container" style="background-image: url('./images/background.jpg');">
+<div class="form-container" style="background-image: url('./images/background2.jpg');">
 
     <form action="codeAccountAdmin.php" method="post">
         <h3>Đăng Nhập</h3>

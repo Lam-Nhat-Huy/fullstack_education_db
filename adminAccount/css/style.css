@@ -69,11 +69,11 @@ body {
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover {
-  background-color: var(--black);
+  opacity: 0.6;
 }
 
 .btn {
-  background-color: var(--blue);
+  background-color: #cb0c9f;
   margin-top: 10px;
 }
 
@@ -96,11 +96,11 @@ body {
 
 .form-container form {
   width: 500px;
-  border-radius: 5px;
+  border-radius: 22px;
   border: var(--border);
   padding: 20px;
   text-align: center;
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .form-container form h3 {
@@ -123,6 +123,7 @@ body {
   margin-top: 20px;
   font-size: 20px;
   color: var(--black);
+  background-color: transparent;
 }
 
 .form-container form p a {
@@ -131,6 +132,8 @@ body {
 
 .form-container form p a:hover {
   text-decoration: underline;
+  transition: 1s;
+  text-underline-offset: 6px;
 }
 
 .container {
