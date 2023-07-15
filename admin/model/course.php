@@ -26,6 +26,8 @@
             </div>
 
             <div class="card-body">
+                <!-- thông báo  -->
+                <?= alertMessage(); ?>
                 <table class="table ">
                     <thead>
                         <tr class="font-weight-bolder">

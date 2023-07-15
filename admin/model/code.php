@@ -15,7 +15,7 @@ if (isset($_POST['addCourse'])) {
     if (!empty($name) or !empty($image) or !empty($price) or !empty($description)) {
         $query_course = mysqli_query($conn, "INSERT INTO courses (name, image, price, description) VALUES ('$name', '$image', '$price', '$description')");
         move_uploaded_file($image_tmp, '../assets/images/' . $img);
-        header('Location: course.php');
+        redirect('course.php', 'Bạn đã thêm khóa học thành công');
     }
 }
 
@@ -29,7 +29,7 @@ if (isset($_POST['updateCourse'])) {
     $description = mysqli_real_escape_string($conn, $_POST['description']);
     $query_course = mysqli_query($conn, "UPDATE courses SET name='$name',image='$image', price='$price', description='$description'  WHERE id= $course_id");
     if ($query_course) {
-        header('Location: course.php');
+        redirect('course.php', 'Bạn đã chỉnh sửa khóa học thành công');
     }
 }
 
@@ -40,6 +40,6 @@ if (isset($_POST['deleteCourse'])) {
     $query = "DELETE FROM courses WHERE id = $course_id";
     $sql = mysqli_query($conn, $query);
     if ($sql) {
-        header('Location: course.php');
+        redirect('course.php', 'Bạn đã xóa khóa học thành công');
     }
 }
