@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('./config.php');
+include('../config/functions.php');
 
 
 
@@ -31,5 +32,7 @@ if (isset($_POST['loginUser'])) {
         $row = mysqli_fetch_assoc($select);
         $_SESSION['user_id'] = $row['id'];
         header('Location: ../../../admin/model/index.php');
+    } else {
+        redirect('login.php', 'Tên tài khoản hoặc mật khẩu không đúng');
     }
 }

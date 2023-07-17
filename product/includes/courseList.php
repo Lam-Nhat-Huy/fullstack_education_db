@@ -22,7 +22,7 @@
                         <input type="hidden" name="course_description" value="<?php echo $fetch_course['description'] ?>">
 
                         <div class="card-button">
-                            <button class="btn btn-primary" type="submit" name="saveCourse">Lưu Khóa Học</button>
+                            <button class="btn btn-primary" type="submit" name="saveCourse">Đăng Ký Học</button>
                         </div>
                     </div>
                 </form>

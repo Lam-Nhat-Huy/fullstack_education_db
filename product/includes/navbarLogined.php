@@ -56,7 +56,7 @@
                                                 <td>
                                                     <img src="./assets/img/<?= $fetch_course['image'] ?>" alt="" width="100">
                                                 </td>
-                                                <td><?= $fetch_course['price'] ?></td>
+                                                <td><strong><?= $fetch_course['price'] ?></strong></td>
                                                 <td>
                                                     <form action="./code.php" method="post">
                                                         <button type="submit" name="deleteCourse" value="<?= $fetch_course['id'] ?>">
