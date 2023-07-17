@@ -1,7 +1,5 @@
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link:hover {
-  color: rgb(255, 0, 0);
-
-  transition: 0.2s;
+  color: #cb0c9f !important;
 }
 .fa-pencil-alt:before {
   font-size: 12px;
@@ -13,4 +11,7 @@
 }
 .saveUser {
   margin-right: 10px;
+}
+.info-admin {
+  color: #cb0c9f;
 }

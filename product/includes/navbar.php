@@ -44,6 +44,7 @@
                 </div>
             </div>
         </div>
+
         <div class="registerUser">
             <button type="button" class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Đăng Ký
@@ -82,7 +83,7 @@
                                                     <label for="">Nhập Lại Mật Khẩu: </label>
                                                     <input type="password" class="form-control" name="cpassword">
                                                 </div>
-                                                <button type="submit" name="registerUser" class="btn btn-primary">Đăng Ký</button>
+                                                <button type="submit" name="registerUser" class="btn btn-primary float-end">Đăng Ký</button>
                                             </form>
                                         </div>
                                     </div>
@@ -120,7 +121,7 @@
                                                     <label for="">Mật Khẩu: </label>
                                                     <input type="password" class="form-control" name="password">
                                                 </div>
-                                                <button type="submit" name="loginUser" class="btn btn-primary">Đăng Nhập</button>
+                                                <button type="submit" name="loginUser" class="btn btn-primary float-end">Đăng Nhập</button>
                                             </form>
                                         </div>
                                     </div>

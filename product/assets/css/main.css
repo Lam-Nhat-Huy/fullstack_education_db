@@ -654,3 +654,6 @@ svg {
   border-radius: 50px;
   transition: 0.3s ease-in-out;
 }
+.modal-content {
+  width: 628px !important;
+}

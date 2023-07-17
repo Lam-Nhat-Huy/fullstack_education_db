@@ -30,8 +30,8 @@
         <!-- Modal -->
         <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
+                <div class="modal-content" style="width: 628px;">
+                    <div class=" modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Khóa Học Của Tôi</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -42,7 +42,7 @@
                                     <td>Tên Khóa Học</td>
                                     <td>Hình Ảnh</td>
                                     <td>Giá</td>
-                                    <td></td>
+                                    <td>Xóa</td>
                                 </thead>
 
                                 <tbody>

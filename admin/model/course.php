@@ -9,8 +9,8 @@
     };
     ?>
     <div class="info d-flex justify-content-center ">
-        <p style="margin-right: 10px;">Tên người dùng: <strong><?php echo $fetch_user['name'] ?></strong></p>
-        <p>Tài khoản: <strong><?php echo $fetch_user['email'] ?></strong></p>
+        <p style="margin-right: 10px;">Tên người dùng: <strong class="info-admin"><?php echo $fetch_user['name'] ?></strong></p>
+        <p>Tài khoản: <strong class="info-admin"><?php echo $fetch_user['email'] ?></strong></p>
     </div>
 
 </div>
@@ -57,10 +57,12 @@
                                     <td class="d-flex justify-content-evenly">
                                         <a href="./courseUpdate.php?id=<?= $fetch_course['id'] ?>" class="btn btn-success btn-sm"><i class="fas fa-pencil-alt"></i>
                                         </a>
+
                                         <form action="code.php" method="post">
                                             <button type="submit" class="btn btn-danger btn-sm" name="deleteCourse" value="<?= $fetch_course['id'] ?>"><i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
+
                                     </td>
 
 

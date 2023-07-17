@@ -8,8 +8,8 @@
     };
     ?>
     <div class="info d-flex justify-content-center">
-        <p style="margin-right: 10px;">Tên người dùng: <strong><?php echo $fetch_user['name'] ?></strong></p>
-        <p>Tài khoản: <strong><?php echo $fetch_user['email'] ?></strong></p>
+        <p style="margin-right: 10px;">Tên người dùng: <strong class="info-admin"><?php echo $fetch_user['name'] ?></strong></p>
+        <p>Tài khoản: <strong class="info-admin"><?php echo $fetch_user['email'] ?></strong></p>
     </div>
 
 </div>
