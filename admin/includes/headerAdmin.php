@@ -26,7 +26,7 @@ include '../../config/functions.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/admin/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="website icon" href="/admin/assets/img/logo-ct-dark.png">
+    <link rel="website icon" href="/admin/assets/images/logoadmin.png">
 
 
 </head>
