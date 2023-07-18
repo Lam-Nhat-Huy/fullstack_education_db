@@ -121,7 +121,8 @@ header {
   height: 800px;
   width: 100%;
   position: relative;
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  margin-top: 30px;
 }
 .content_list {
   display: flex;
@@ -666,4 +667,8 @@ svg {
 }
 .td-price {
   color: red;
+}
+.footer {
+  background-color: #2d0a31;
+  color: #fff;
 }
