@@ -52,15 +52,15 @@
                                         while ($fetch_course = mysqli_fetch_array($course_query)) {
                                     ?>
                                             <tr>
-                                                <td><?= $fetch_course['name'] ?></td>
-                                                <td>
-                                                    <img src="./assets/img/<?= $fetch_course['image'] ?>" alt="" width="100">
+                                                <td class="td-item"><?= $fetch_course['name'] ?></td>
+                                                <td class="td-item">
+                                                    <img src="./assets/img/<?= $fetch_course['image'] ?>" class="td-img" alt="" width="100">
                                                 </td>
-                                                <td><strong><?= $fetch_course['price'] ?></strong></td>
-                                                <td>
+                                                <td class="td-item td-price"><strong><?= $fetch_course['price'] ?></strong></td>
+                                                <td class="td-item">
                                                     <form action="./code.php" method="post">
                                                         <button type="submit" name="deleteCourse" value="<?= $fetch_course['id'] ?>">
-                                                            <span><i class="fa fa-times " style="font-size: 20px;"></i></span>
+                                                            <span><i class="fa fa-times"></i></span>
                                                         </button>
                                                     </form>
                                                 </td>

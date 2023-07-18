@@ -3,6 +3,7 @@ include('../config/database.php');
 include('../config/functions.php');
 
 
+
 // Chức năng đăng ký user
 if (isset($_POST['registerUser'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);

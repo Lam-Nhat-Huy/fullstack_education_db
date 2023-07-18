@@ -657,3 +657,13 @@ svg {
 .modal-content {
   width: 628px !important;
 }
+.td-item {
+  line-height: 65px;
+}
+.td-img {
+  height: 72px;
+  width: 140px;
+}
+.td-price {
+  color: red;
+}
