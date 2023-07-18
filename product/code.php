@@ -7,6 +7,7 @@ include('../config/functions.php');
 if (isset($_POST['registerUser'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $role = mysqli_real_escape_string($conn, $_POST['role']);
     $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $password = mysqli_real_escape_string($conn, md5($_POST['password']));
     $cpassword = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
@@ -16,7 +17,7 @@ if (isset($_POST['registerUser'])) {
         if (mysqli_num_rows($select_user) > 0) {
             $message[] = "User already exists";
         } else {
-            mysqli_query($conn, "INSERT INTO `users`(name, email, phone, password) VALUES('$name', '$email','$phone', '$password')") or die('query failed');
+            mysqli_query($conn, "INSERT INTO `users`(name, email, role, phone, password) VALUES('$name', '$email','$role','$phone', '$password')") or die('query failed');
             header('Location: index.php');
         }
     } else {

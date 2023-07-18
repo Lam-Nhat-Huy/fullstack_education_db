@@ -60,7 +60,7 @@
                                                 <td>
                                                     <form action="./code.php" method="post">
                                                         <button type="submit" name="deleteCourse" value="<?= $fetch_course['id'] ?>">
-                                                            <span><i class="fa fa-trash"></i></span>
+                                                            <span><i class="fa fa-times " style="font-size: 20px;"></i></span>
                                                         </button>
                                                     </form>
                                                 </td>
