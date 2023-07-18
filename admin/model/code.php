@@ -9,14 +9,15 @@ if (isset($_POST['saveUser'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, md5($_POST['password']));
     $role = mysqli_real_escape_string($conn, $_POST['role']);
-    if (!empty($name) or !empty($phone) or !empty($email) or !empty($password)) {
+    if (!empty($name) && !empty($phone) && !empty($email) && !empty($password)) {
         $query_user = mysqli_query($conn, "INSERT INTO users (name, phone, email, password, role) VALUES ('$name', '$phone', '$email', '$password', '$role')");
         redirect('user.php', 'Bạn đã thêm người dùng thành công');
+    } else {
+        redirect('user.php', 'Bạn đã thêm người dùng không thành công');
     }
 }
 
-
-// Chỉnh sửa người dùng
+// Chỉnh sửa thông tin người dùng
 
 if (isset($_POST['updateUser'])) {
     $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
@@ -30,7 +31,7 @@ if (isset($_POST['updateUser'])) {
     }
 }
 
-// Xóa khóa học
+// Xóa người dùng
 
 if (isset($_POST['deleteUser'])) {
     $user_id = mysqli_real_escape_string($conn, $_POST['deleteUser']);
@@ -40,7 +41,6 @@ if (isset($_POST['deleteUser'])) {
         redirect('user.php', 'Bạn đã xóa khóa học thành công');
     }
 }
-
 
 // Thêm khóa học
 
@@ -55,6 +55,8 @@ if (isset($_POST['addCourse'])) {
         $query_course = mysqli_query($conn, "INSERT INTO courses (name, image, price, description) VALUES ('$name', '$image', '$price', '$description')");
         move_uploaded_file($image_tmp, '../assets/images/' . $img);
         redirect('course.php', 'Bạn đã thêm khóa học thành công');
+    } else {
+        redirect('course.php', 'Bạn đã thêm khóa học không thành công');
     }
 }
 
