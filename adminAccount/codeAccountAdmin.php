@@ -14,7 +14,7 @@ if (isset($_POST['saveUser'])) {
 
     $select = mysqli_query($conn, "SELECT * FROM `admin` WHERE email='$email' AND password='$password'");
     if (mysqli_num_rows($select) > 0) {
-        echo "<script>alert('Tài đã tồn tại');</script>";
+        header("Location: register.php");
     } else {
         mysqli_query($conn, "INSERT INTO `admin` (name, email, password) VALUES ('$name', '$email', '$password')");
         header('Location: login.php');
