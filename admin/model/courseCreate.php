@@ -10,7 +10,7 @@
                 </h4>
             </div>
             <div class="card-body">
-                <form action="code.php" method="post" enctype="multipart/form-data">
+                <form action="./code.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="">Tên Khóa Học: </label>
                         <input type="text" class="form-control" name="name">
