@@ -70,7 +70,7 @@
                     </p>
                     <p>
                         <i class="fas fa-envelope me-3"></i>
-                        © 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam
+                        Nền tảng học lập trình hàng đầu.
                     </p>
                 </div>
                 <!-- Grid column -->

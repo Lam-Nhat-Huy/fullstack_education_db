@@ -672,3 +672,6 @@ svg {
   background-color: #2d0a31;
   color: #fff;
 }
+.text-reset {
+  text-decoration: none;
+}
