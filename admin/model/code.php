@@ -53,7 +53,7 @@ if (isset($_POST['addCourse'])) {
 
     if (!empty($name) or !empty($image) or !empty($price) or !empty($description)) {
         $query_course = mysqli_query($conn, "INSERT INTO courses (name, image, price, description) VALUES ('$name', '$image', '$price', '$description')");
-        move_uploaded_file($image_tmp, '../assets/images/' . $img);
+        move_uploaded_file($image_tmp, '../assets/images/' . $image);
         redirect('course.php', 'Bạn đã thêm khóa học thành công');
     } else {
         redirect('course.php', 'Bạn đã thêm khóa học không thành công');
