@@ -9,9 +9,9 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Fullstack Education
+                        <i class="fas fa-code me-3"></i>Fullstack Education
                     </h6>
-                    <p>
+                    <p class="footer-des">
                         Học Lập Trình Để Đi Làm với các khóa học xây dựng UI web với HTML, CSS, lập trình Java, lập trình Javascript, React, ReactJS, lập trình mobile React-Native
                     </p>
                 </div>
@@ -65,11 +65,11 @@
                     <h6 class="text-uppercase fw-bold mb-4">CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</h6>
                     <p><i class="fas fa-home me-3"></i> Mã số thuế: 0109922901</p>
                     <p>
-                        <i class="fas fa-envelope me-3"></i>
+                        <i class="fas fa-fire me-3"></i>
                         Ngày thành lập: 04/03/2022
                     </p>
                     <p>
-                        <i class="fas fa-envelope me-3"></i>
+                        <i class="fas fa-fire me-3"></i>
                         Nền tảng học lập trình hàng đầu.
                     </p>
                 </div>
