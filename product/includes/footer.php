@@ -9,7 +9,7 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-code me-3"></i>Fullstack Education
+                        Fullstack Education
                     </h6>
                     <p class="footer-des">
                         Học Lập Trình Để Đi Làm với các khóa học xây dựng UI web với HTML, CSS, lập trình Java, lập trình Javascript, React, ReactJS, lập trình mobile React-Native
