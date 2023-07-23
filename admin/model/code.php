@@ -46,14 +46,17 @@ if (isset($_POST['deleteUser'])) {
 
 if (isset($_POST['addCourse'])) {
     $name = validate($_POST['name']);
-    $image = validate($_FILES['image']['name']);
-    $image_tmp = validate($_FILES['image']['tmp_name']);
+    $image = $_FILES['image']['name'];
+    $image_tmp = $_FILES['image']['tmp_name'];
     $price = validate($_POST['price']);
     $description = validate($_POST['description']);
 
+    $targetDirectory = "../assets/uploads/"; // Thay đổi đường dẫn tùy theo thư mục lưu trữ của bạn
+    $targetPath = $targetDirectory . $image;
+    move_uploaded_file($image_tmp, $targetPath);
+
     if (!empty($name) or !empty($image) or !empty($price) or !empty($description)) {
         $query_course = mysqli_query($conn, "INSERT INTO courses (name, image, price, description) VALUES ('$name', '$image', '$price', '$description')");
-        move_uploaded_file($image_tmp, '../assets/images/' . $image);
         redirect('course.php', 'Bạn đã thêm khóa học thành công');
     } else {
         redirect('course.php', 'Bạn đã thêm khóa học không thành công');
@@ -77,7 +80,13 @@ if (isset($_POST['updateCourse'])) {
 // Xóa khóa học
 
 if (isset($_POST['deleteCourse'])) {
-    $course_id = validate($_POST['deleteCourse']);
+    $course_id = mysqli_real_escape_string($conn, $_POST['deleteCourse']);
+
+    $query = "SELECT image FROM courses WHERE id = $course_id";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    $imagePath = $row['image'];
+
     $query = "DELETE FROM courses WHERE id = $course_id";
     $sql = mysqli_query($conn, $query);
     if ($sql) {

@@ -49,7 +49,7 @@
                                     <td><?= $fetch_course['id'] ?></td>
                                     <td><?= $fetch_course['name'] ?></td>
                                     <td>
-                                        <img src="../assets/images/<?= $fetch_course['image'] ?>" alt="" width="100px">
+                                        <img src="../assets/uploads/<?= $fetch_course['image'] ?>" alt="" width="100px">
                                     </td>
                                     <td><?= $fetch_course['price'] ?></td>
                                     <td><?= $fetch_course['description'] ?></td>
