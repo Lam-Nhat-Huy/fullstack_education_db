@@ -25,7 +25,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="">Hình Ảnh: </label>
-                            <input type="file" class="form-control" name="image" value="<?= $select_course['image'] ?>">
+                            <input type="text" class="form-control" name="image" value="<?= $select_course['image'] ?>">
                         </div>
                         <div class="mb-3">
                             <label for="">Giá: </label>

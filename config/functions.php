@@ -8,6 +8,11 @@ if (!isset($user_id)) {
     header('Location: ../../../adminAccount/login.php');
 }
 
+function validate($inputData)
+{
+    global $conn;
+    return mysqli_real_escape_string($conn, $inputData);
+}
 
 // Hàm này dùng để gán thông tin khi submit
 function redirect($url, $status)
