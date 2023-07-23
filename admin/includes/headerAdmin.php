@@ -22,7 +22,7 @@ include '../../config/functions.php';
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/admin/assets/css/nucleo-icons.css">
     <!-- CSS Files -->
-    <link id="pagestyle" href="/admin/assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+    <link id="pagestyle" href="/admin/assets/css/main.css?v=1.0.7" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/admin/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

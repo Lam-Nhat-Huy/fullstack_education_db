@@ -26,7 +26,6 @@ if (isset($_POST['loginUser'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, md5($_POST['password']));
 
-
     $select = mysqli_query($conn, "SELECT * FROM `admin` WHERE email = '$email' AND password = '$password'");
     if (mysqli_num_rows($select) > 0) {
         $row = mysqli_fetch_assoc($select);
