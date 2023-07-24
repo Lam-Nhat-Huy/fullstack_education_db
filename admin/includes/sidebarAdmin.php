@@ -48,6 +48,6 @@
         </ul>
     </div>
     <div class="sidenav-footer mx-3 ">
-        <a class="btn bg-gradient-primary mt-3 w-100" href="../../adminAccount/login.php">Đăng Xuất</a>
+        <a class="btn bg-gradient-primary mt-3 w-100" href="../../adminAccount/login.php" onclick="return confirm('Bạn có chắc chắn đăng xuất? ')">Đăng Xuất</a>
     </div>
 </aside>

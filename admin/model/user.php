@@ -53,7 +53,7 @@
                                     <td class="d-flex justify-content-evenly">
                                         <a href="./userUpdate.php?id=<?= $fetch_user['id'] ?>" class="btn btn-success btn-sm"><i class="fas fa-pencil-alt"></i></a>
                                         <form action="code.php" method="post">
-                                            <button type="submit" class="btn btn-danger btn-sm" name="deleteUser" value="<?= $fetch_user['id'] ?>"><i class="fas fa-trash-alt"></i>
+                                            <button onclick="return confirm('Bạn có chắc chắn muốn xóa? ')" type="submit" class="btn btn-danger btn-sm" name="deleteUser" value="<?= $fetch_user['id'] ?>"><i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
                                     </td>

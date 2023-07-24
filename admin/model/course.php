@@ -59,7 +59,7 @@
                                         </a>
 
                                         <form action="code.php" method="post">
-                                            <button type="submit" class="btn btn-danger btn-sm" name="deleteCourse" value="<?= $fetch_course['id'] ?>"><i class="fas fa-trash-alt"></i>
+                                            <button onclick="return confirm('Bạn có chắc chắn muốn xóa? ')" type="submit" class="btn btn-danger btn-sm" name="deleteCourse" value="<?= $fetch_course['id'] ?>"><i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
 
