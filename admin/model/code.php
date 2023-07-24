@@ -1,3 +1,4 @@
+
 <?php
 include('../../config/functions.php');
 
@@ -93,3 +94,5 @@ if (isset($_POST['deleteCourse'])) {
         redirect('course.php', 'Bạn đã xóa khóa học thành công');
     }
 }
+
+?>
