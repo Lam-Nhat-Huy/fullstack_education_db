@@ -4,7 +4,7 @@
     <form action="codeAccountAdmin.php" method="post">
         <h3>Quên mật khẩu</h3>
         <input type="email" id="email" name="email" class="box" placeholder="Nhập email của bạn" required>
-        <input type="submit" class="btn " name="forgetPassword" value="Gửi">
+        <input type="submit" class="btn " name="forgetPassword" value="Gửi yêu cầu">
     </form>
 
 </div>

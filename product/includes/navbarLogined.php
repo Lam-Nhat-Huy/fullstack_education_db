@@ -52,9 +52,13 @@
                                         while ($fetch_course = mysqli_fetch_array($course_query)) {
                                     ?>
                                             <tr>
-                                                <td class="td-item"><?= $fetch_course['name'] ?></td>
+                                                <td class="td-item"><?= $fetch_course['name'] ?> <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar" style="width: 25%"></div>
+                                                    </div>
+                                                </td>
                                                 <td class="td-item">
-                                                    <img src="./assets/img/<?= $fetch_course['image'] ?>" class="td-img" alt="" width="100">
+                                                    <img src="../../admin/assets/uploads/<?= $fetch_course['image'] ?>" alt="" width="120">
+
                                                 </td>
                                                 <td class="td-item td-price"><strong><?= $fetch_course['price'] ?></strong></td>
                                                 <td class="td-item">

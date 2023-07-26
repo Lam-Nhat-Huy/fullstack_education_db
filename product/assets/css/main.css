@@ -661,12 +661,17 @@ svg {
 .td-item {
   line-height: 65px;
 }
+.td-item:nth-child(1) {
+  line-height: 65px;
+  position: relative;
+  bottom: 7px;
+}
 .td-img {
   height: 72px;
   width: 140px;
 }
 .td-price {
-  color: red;
+  color: #db5df0;
 }
 .footer {
   background-color: #2d0a31;
@@ -677,4 +682,25 @@ svg {
 }
 .footer-des {
   line-height: 1.6;
+}
+.progress {
+  display: flex;
+  height: 8px;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  position: relative;
+  bottom: 12px;
+}
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #db5df0;
+  transition: width 0.6s ease;
 }

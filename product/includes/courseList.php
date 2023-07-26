@@ -7,7 +7,7 @@
             <div class="card-product mb-5">
                 <form action="./code.php" method="post">
                     <div class="card-img">
-                        <img src="./assets/img/<?= $fetch_course['image'] ?>" alt="">
+                        <img src="../../admin/assets/uploads/<?= $fetch_course['image'] ?>" alt="">
                     </div>
                     <div class="card-info">
                         <p class="text-title"><?= $fetch_course['name'] ?></p>
