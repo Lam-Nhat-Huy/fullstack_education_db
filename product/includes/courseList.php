@@ -1,4 +1,7 @@
-<div class="container-fluid course-list d-flex justify-content-evenly flex-wrap mt-5">
+<div class="heading text-center mt-5">
+    <h3 class="font-weigh">Danh sách khóa học</h3>
+</div>
+<div class="container-fluid course-list d-flex justify-content-evenly flex-dec flex-wrap mt-5">
     <?php
     $query_course = mysqli_query($conn, "SELECT * FROM courses ");
     if (mysqli_num_rows($query_course) > 0) {
@@ -14,7 +17,7 @@
                         <p class="text-body"><?= $fetch_course['description'] ?></p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title"><?= $fetch_course['price'] ?></span>
+                        <span class="text-title"><?= $fetch_course['price'] ?>VNĐ</span>
 
                         <input type="hidden" name="course_name" value="<?php echo $fetch_course['name'] ?>">
                         <input type="hidden" name="course_image" value="<?php echo $fetch_course['image'] ?>">

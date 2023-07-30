@@ -24,4 +24,3 @@ include('functions.php');
 <body>
     <div class="containers">
         <?php include 'navbarLogined.php'; ?>
-        <?php include 'includes/content.php'; ?>

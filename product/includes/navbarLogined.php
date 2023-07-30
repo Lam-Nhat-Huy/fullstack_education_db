@@ -8,7 +8,7 @@
     <nav>
         <ul class="nav_list mt-3">
             <li class="nav_list-item">
-                <a href="" class="nav_list-link">Trang Chủ</a>
+                <a href="../indexLogined.php" class="nav_list-link">Trang Chủ</a>
             </li>
             <li class="nav_list-item">
                 <a href="#" class="nav_list-link">Khóa Học</a>
@@ -52,18 +52,18 @@
                                         while ($fetch_course = mysqli_fetch_array($course_query)) {
                                     ?>
                                             <tr>
-                                                <td class="td-item"><?= $fetch_course['name'] ?> <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                        <div class="progress-bar" style="width: 25%"></div>
-                                                    </div>
+                                                <td class="td-item">
+                                                    <?= $fetch_course['name'] ?>
                                                 </td>
                                                 <td class="td-item">
                                                     <img src="../../admin/assets/uploads/<?= $fetch_course['image'] ?>" alt="" width="120">
-
                                                 </td>
-                                                <td class="td-item td-price"><strong><?= $fetch_course['price'] ?></strong></td>
+                                                <td class="td-item" style="color: #fa8c16;">
+                                                    <?= $fetch_course['price'] ?>VNĐ
+                                                </td>
                                                 <td class="td-item">
                                                     <form action="./code.php" method="post">
-                                                        <button type="submit" name="deleteCourse" value="<?= $fetch_course['id'] ?>">
+                                                        <button onclick="return confirm('Bạn có chắc chắn muốn xóa? ')" type="submit" name="deleteCourse" value="<?= $fetch_course['id'] ?>">
                                                             <span><i class="fa fa-times"></i></span>
                                                         </button>
                                                     </form>
@@ -79,6 +79,9 @@
                             </table>
                         </div>
                     </div>
+                    <div class="modal-footer">
+                        <a href="../../product/payment.php" class="btn btn-outline-danger"><i class="fa fa-credit-card"></i> Thanh toán</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,7 +95,7 @@
             <span class="info-user"><?php echo $fetch_user['name'] ?></span>
         </div>
         <div class="logout">
-            <a href="./index.php" class="cart">Đăng Xuất</a>
+            <a href="./index.php" onclick="return confirm('Bạn có chắc chắn muốn đăng xuất? ')" class="cart">Đăng Xuất</a>
         </div>
     </div>
 

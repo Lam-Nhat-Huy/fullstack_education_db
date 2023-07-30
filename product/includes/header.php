@@ -22,4 +22,3 @@ include('functions.php');
 <body>
     <div class="containers">
         <?php include 'navbar.php'; ?>
-        <?php include 'includes/content.php'; ?>

@@ -664,7 +664,9 @@ svg {
 .td-item:nth-child(1) {
   line-height: 65px;
   position: relative;
-  bottom: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  bottom: -3px;
 }
 .td-img {
   height: 72px;
@@ -703,4 +705,91 @@ svg {
   white-space: nowrap;
   background-color: #db5df0;
   transition: width 0.6s ease;
+}
+aside {
+  border-right: 1px solid #333c6d;
+  width: 35%;
+  background-color: #2d0a31;
+  padding: 12px;
+}
+article {
+  width: 75%;
+  background-color: #2d0a31;
+}
+.course-card {
+  margin-left: 10px;
+}
+.course-name {
+  margin-left: 10px;
+}
+.loading h5 {
+  color: #dae4f0;
+  display: block;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.line-bottom {
+  border-bottom: 1px solid #333c6d;
+}
+.course-name h6 {
+  color: #dae4f0;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.course-name .price {
+  color: #fa8c16 !important;
+}
+.course_price h5 {
+  color: #dae4f0;
+  display: block;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.price-sum {
+  color: #fa8c16 !important;
+  margin-left: 10px;
+}
+article {
+  padding: 22px;
+}
+.transfer {
+  margin-left: 13px;
+}
+.transfer-top {
+  margin-bottom: 20px;
+}
+.tranfer-item {
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.transfer-item-info {
+  height: 60px;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 12px;
+  margin-left: 10px;
+  width: 341px;
+  background-color: #edd2fa;
+}
+.pay-list {
+  display: flex;
+}
+.stk {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.stk-heading {
+  margin-bottom: 0;
+}
+.atm-list {
+  margin-left: 145px;
+}
+.transfer-bottom {
+  margin-top: 15px;
 }
